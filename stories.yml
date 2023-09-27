@@ -1,0 +1,500 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - user: "hey"
+  - action: utter_greet
+  - user: "hi"
+  - action: utter_greet
+  - user: "hello"
+  - action: utter_greet
+  - user: "perfect"
+  - action: utter_happy
+  - user: "great"
+  - action: utter_happy
+  - user: "amazing"
+  - action: utter_happy
+  - user: "feeling like a king"
+  - action: utter_happy
+  - user: "I am feeling very good"
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - user: "hey"
+  - action: utter_greet
+  - user: "hi"
+  - action: utter_greet
+  - user: "hello"
+  - action: utter_greet
+  - user: "i am unhappy"
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: "no"
+  - action: utter_goodbye
+  - user: "never"
+  - action: utter_goodbye
+
+- story: health insurance claims
+  steps:
+  - user: "How do I file a claim?"
+  - action: utter_cstart
+  - action: utter_hclaims1
+  - action: utter_cend
+  - user: "How can I claim a file?"
+  - action: utter_cstart
+  - action: utter_hclaims1
+  - action: utter_cend
+  - user: "Explain the steps to claim a file"
+  - action: utter_cstart
+  - action: utter_hclaims1
+  - action: utter_cend
+  - user: "Explain the steps to claim a file"
+  - action: utter_cstart
+  - action: utter_hclaims2
+  - action: utter_cend
+  - user: "What documents do I need for a claim?"
+  - action: utter_cstart
+  - action: utter_hclaims2
+  - action: utter_cend
+  - user: "What all documents are required to claim a file?"
+  - action: utter_cstart
+  - action: utter_hclaims2
+  - action: utter_cend
+  - user: "What's the status of my claim?"
+  - action: utter_cstart
+  - action: utter_hclaims3
+  - action: utter_cend
+  - user: "Can I see the status of my claim?"
+  - action: utter_cstart
+  - action: utter_hclaims3
+  - action: utter_cend
+  - user: "Show me the status of my claim"
+  - action: utter_cstart
+  - action: utter_hclaims3
+  - action: utter_cend
+  - user: "How long does it take to process a claim?"
+  - action: utter_cstart
+  - action: utter_hclaims4
+  - action: utter_cend
+  - user: "What is the processing time of a claim?"
+  - action: utter_cstart
+  - action: utter_hclaims4
+  - action: utter_cend
+  - user: "How much time it will take to process my claim?"
+  - action: utter_cstart
+  - action: utter_hclaims4
+  - action: utter_cend
+
+- story: health insurance coverage
+  steps:
+  - user: "What is covered by health insurance?"
+  - action: utter_cstart
+  - action: utter_hcoverage1
+  - action: utter_cend
+  - user: "List of all the things that health insurance covers"
+  - action: utter_cstart
+  - action: utter_hcoverage1
+  - action: utter_cend
+  - user: "What aspects does health insurance cover?"
+  - action: utter_cstart
+  - action: utter_hcoverage1
+  - action: utter_cend
+  - user: "How do I find a doctor who accepts my health insurance?"
+  - action: utter_cstart
+  - action: utter_hcoverage2
+  - action: utter_cend
+  - user: "How can I locate a medical professional who takes my health insurance?"
+  - action: utter_cstart
+  - action: utter_hcoverage2
+  - action: utter_cend
+  - user: "Which doctors are covered in my health insurance?"
+  - action: utter_cstart
+  - action: utter_hcoverage2
+  - action: utter_cend
+  - user: "How do I get reimbursed for medical expenses?"
+  - action: utter_cstart
+  - action: utter_hcoverage3
+  - action: utter_cend
+  - user: "How can I have my medical expenditures paid for?"
+  - action: utter_cstart
+  - action: utter_hcoverage3
+  - action: utter_cend
+  - user: "What is the reimbursement procedure in health insurance?"
+  - action: utter_cstart
+  - action: utter_hcoverage3
+  - action: utter_cend
+
+- story: health insurance information genral
+  steps:
+  - user: "What are the types of Health Insurances I can opt for?"
+  - action: utter_cstart
+  - action: utter_hginfo1
+  - action: utter_cend
+  - user: "What types of health insurance are available to me?"
+  - action: utter_cstart
+  - action: utter_hginfo1
+  - action: utter_cend
+  - user: "Different types of health insurance available to me are"
+  - action: utter_cstart
+  - action: utter_hginfo1
+  - action: utter_cend
+  - user: "What is a Coverage Amount?"
+  - action: utter_cstart
+  - action: utter_hginfo2
+  - action: utter_cend
+  - user: "Define Coverage Amount"
+  - action: utter_cstart
+  - action: utter_hginfo2
+  - action: utter_cend
+  - user: "What does Coverage Amount mean?"
+  - action: utter_cstart
+  - action: utter_hginfo2
+  - action: utter_cend
+  - user: "What are the factors to consider before deciding your sum insured amount?"
+  - action: utter_cstart
+  - action: utter_hginfo3
+  - action: utter_cend
+  - user: "What aspects should you take into account while choosing the amount of your insurance?"
+  - action: utter_cstart
+  - action: utter_hginfo3
+  - action: utter_cend
+  - user: "What should we keep in mind while choosing the sum insured amount?"
+  - action: utter_cstart
+  - action: utter_hginfo3
+  - action: utter_cend
+  - user: "What is a Co-Pay clause in Health Insurance?"
+  - action: utter_cstart
+  - action: utter_hginfo4
+  - action: utter_cend
+  - user: "What does a health insurance co-pay clause mean?"
+  - action: utter_cstart
+  - action: utter_hginfo4
+  - action: utter_cend
+  - user: "Throw some light on co-pay clause"
+  - action: utter_cstart
+  - action: utter_hginfo4
+  - action: utter_cend
+  - user: "What is a Deductible in Health Insurance?"
+  - action: utter_cstart
+  - action: utter_hginfo5
+  - action: utter_cend
+  - user: "What Does a Health Insurance Deductible Mean?"
+  - action: utter_cstart
+  - action: utter_hginfo5
+  - action: utter_cend
+  - user: "Information on Health Insurance Deductible"
+  - action: utter_cstart
+  - action: utter_hginfo5
+  - action: utter_cend
+  - user: "What is No-Claim Bonus?"
+  - action: utter_cstart
+  - action: utter_hginfo6
+  - action: utter_cend
+  - user: "No-Claim Bonus: What is it?"
+  - action: utter_cstart
+  - action: utter_hginfo6
+  - action: utter_cend
+  - user: "Explain No-Claim Bonus"
+  - action: utter_cstart
+  - action: utter_hginfo6
+  - action: utter_cend
+  - user: "What is Network Hospital List for me?"
+  - action: utter_cstart
+  - action: utter_hginfo7
+  - action: utter_cend
+  - user: "What do I get out of Network Hospital List?"
+  - action: utter_cstart
+  - action: utter_hginfo7
+  - action: utter_cend
+  - user: "Explain Network Hospital List with respect to my health insurance"
+  - action: utter_cstart
+  - action: utter_hginfo7
+  - action: utter_cend
+
+- story: term insurance information genral
+  steps:
+  - user: "Can I expect my premium to change in the future?"
+  - action: utter_cstart
+  - action: utter_tiginfo1
+  - action: utter_cend
+  - user: "Is there a possibility that the premium can change in future ?"
+  - action: utter_cstart
+  - action: utter_tiginfo1
+  - action: utter_cend
+  - user: "Can I change premium later ?"
+  - action: utter_cstart
+  - action: utter_tiginfo1
+  - action: utter_cend
+  - user: "What happens if I outlive the policy?"
+  - action: utter_cstart
+  - action: utter_tiginfo2
+  - action: utter_cend
+  - user: "Consequences of outliving the policy are"
+  - action: utter_cstart
+  - action: utter_tiginfo2
+  - action: utter_cend
+  - user: "What will happen if I outlive my policy?"
+  - action: utter_cstart
+  - action: utter_tiginfo2
+  - action: utter_cend
+  - user: "What happens if I miss paying a premium on time?"
+  - action: utter_cstart
+  - action: utter_tiginfo3
+  - action: utter_cend
+  - user: "Consequences of missing premium payment "
+  - action: utter_cstart
+  - action: utter_tiginfo3
+  - action: utter_cend
+  - user: "What will happen after I missed paying payment of premium ?"
+  - action: utter_cstart
+  - action: utter_tiginfo3
+  - action: utter_cend
+  - user: "What tenure should I pick?"
+  - action: utter_cstart
+  - action: utter_tiginfo4
+  - action: utter_cend
+  - user: "Steps to set a tenure are"
+  - action: utter_cstart
+  - action: utter_tiginfo4
+  - action: utter_cend
+  - user: "What are the steps involved to select tenure ?"
+  - action: utter_cstart
+  - action: utter_tiginfo4
+  - action: utter_cend
+  - user: "Will a history of smoking impact my ability to purchase a plan?"
+  - action: utter_cstart
+  - action: utter_tiginfo5
+  - action: utter_cend
+  - user: "Does insurance plan depends on our smoking habits?"
+  - action: utter_cstart
+  - action: utter_tiginfo5
+  - action: utter_cend
+  - user: "Will smoking stop me from buying term insurance plan?"
+  - action: utter_cstart
+  - action: utter_tiginfo5
+  - action: utter_cend
+
+- story: term insurance coverage
+  steps:
+  - user: "How much coverage do I need?"
+  - action: utter_cstart
+  - action: utter_ticoverage1
+  - action: utter_cend
+  - user: "Coverage required in term insurance is"
+  - action: utter_cstart
+  - action: utter_ticoverage1
+  - action: utter_cend
+  - user: "What is the coverage required in term insurance?"
+  - action: utter_cstart
+  - action: utter_ticoverage1
+  - action: utter_cend
+  - user: "Do term policies cover accidental deaths?"
+  - action: utter_cstart
+  - action: utter_ticoverage2
+  - action: utter_cend
+  - user: "Are accidental deaths covered in term policies ?"
+  - action: utter_cstart
+  - action: utter_ticoverage2
+  - action: utter_cend
+  - user: "Accidental deaths and term policies inclusion "
+  - action: utter_cstart
+  - action: utter_ticoverage2
+  - action: utter_cend
+  - user: "What is covered by term insurance?"
+  - action: utter_cstart
+  - action: utter_ticoverage3
+  - action: utter_cend
+  - user: "Term insurance covers?"
+  - action: utter_cstart
+  - action: utter_ticoverage3
+  - action: utter_cend
+  - user: "List everything that is covered in term insurance"
+  - action: utter_cstart
+  - action: utter_ticoverage3
+  - action: utter_cend
+
+- story: term insurance claims
+  steps:
+  - user: "How do I file a claim for term insurance?"
+  - action: utter_cstart
+  - action: utter_ticlaims1
+  - action: utter_cend
+  - user: "Steps to claim a file for term insurance"
+  - action: utter_cstart
+  - action: utter_ticlaims1
+  - action: utter_cend
+  - user: "What are the steps to claim a file for term insurance?"
+  - action: utter_cstart
+  - action: utter_ticlaims1
+  - action: utter_cend
+  - user: "What are the steps to claim term insurance?"
+  - action: utter_cstart
+  - action: utter_ticlaims2
+  - action: utter_cend
+  - user: "All the documents needed for a claiming term insurance are "
+  - action: utter_cstart
+  - action: utter_ticlaims2
+  - action: utter_cend
+  - user: "List document requirements for a term insurance claim "
+  - action: utter_cstart
+  - action: utter_ticlaims2
+  - action: utter_cend
+  - user: "What's the status of my term insurance claim?"
+  - action: utter_cstart
+  - action: utter_ticlaims3
+  - action: utter_cend
+  - user: "Give status of my term insurance claim "
+  - action: utter_cstart
+  - action: utter_ticlaims3
+  - action: utter_cend
+  - user: "Can you show the status of my term insurance claim ?"
+  - action: utter_cstart
+  - action: utter_ticlaims3
+  - action: utter_cend
+  - user: "How long does it take to process a term insurance claim?"
+  - action: utter_cstart
+  - action: utter_ticlaims4
+  - action: utter_cend
+  - user: "Time taken to process a term insurance claim is"
+  - action: utter_cstart
+  - action: utter_ticlaims4
+  - action: utter_cend
+  - user: "What is the exact time of processing of a term insurance claim?"
+  - action: utter_cstart
+  - action: utter_ticlaims4
+  - action: utter_cend
+
+- story: motor insurance claims
+  steps:
+  - user: "How do I file a claim for motor insurance?"
+  - action: utter_cstart
+  - action: utter_mclaims1
+  - action: utter_cend
+  - user: "Steps to file a motor insurance plan"
+  - action: utter_cstart
+  - action: utter_mclaims1
+  - action: utter_cend
+  - user: "How a motor insurance plan is filed?"
+  - action: utter_cstart
+  - action: utter_mclaims1
+  - action: utter_cend
+  - user: "What documents do I need for a motor insurance claim?"
+  - action: utter_cstart
+  - action: utter_mclaims2
+  - action: utter_cend
+  - user: "Explain the documents requirement for claiming motor insurance"
+  - action: utter_cstart
+  - action: utter_mclaims2
+  - action: utter_cend
+  - user: "What all documents are required to claim motor insurance?"
+  - action: utter_cstart
+  - action: utter_mclaims2
+  - action: utter_cend
+  - user: "What's the status of my vehicle insurance claim?"
+  - action: utter_cstart
+  - action: utter_mclaims3
+  - action: utter_cend
+  - user: "vehicle insurance claim status?"
+  - action: utter_cstart
+  - action: utter_mclaims3
+  - action: utter_cend
+  - user: "status of my vehicle insurance claim?"
+  - action: utter_cstart
+  - action: utter_mclaims3
+  - action: utter_cend
+  - user: "How long does it take to process a vehicle insurance claim?"
+  - action: utter_cstart
+  - action: utter_mclaims4
+  - action: utter_cend
+  - user: "Time to claim vehicle insurance?"
+  - action: utter_cstart
+  - action: utter_mclaims4
+  - action: utter_cend
+  - user: "Average time to vehicle insurance claim ?"
+  - action: utter_cstart
+  - action: utter_mclaims4
+  - action: utter_cend
+
+- story: motor insurance coverage
+  steps:
+  - user: "How much amount does the coverage cover in my vehicle insurance?"
+  - action: utter_cstart
+  - action: utter_mcoverage1
+  - action: utter_cend
+  - user: "Money i will get after vehicle insurance claim?"
+  - action: utter_cstart
+  - action: utter_mcoverage1
+  - action: utter_cend
+  - user: "Amount i will get after vehicle insurance claim ?"
+  - action: utter_cstart
+  - action: utter_mcoverage1
+  - action: utter_cend
+  - user: "What if someone else meet with accident in my car/bike?"
+  - action: utter_cstart
+  - action: utter_mcoverage2
+  - action: utter_cend
+  - user: "Claim after accident procedure?"
+  - action: utter_cstart
+  - action: utter_mcoverage2
+  - action: utter_cend
+  - user: "what happens if i meet with accident?"
+  - action: utter_cstart
+  - action: utter_mcoverage2
+  - action: utter_cend
+  - user: "What is covered by motor insurance?"
+  - action: utter_cstart
+  - action: utter_mcoverage3
+  - action: utter_cend
+  - user: "motor insurance coverage?"
+  - action: utter_cstart
+  - action: utter_mcoverage3
+
+- story: motor insurance general info
+  steps:
+  - user: "For how long is my motor insurance policy valid?"
+  - action: utter_cstart
+  - action: utter_mginfo1
+  - action: utter_cend
+  - user: "what is the duration of a standard motor insurance policy?"
+  - action: utter_cstart
+  - action: utter_mginfo1
+  - action: utter_cend
+  - user: "Can you clarify the validity period of my motor insurance policy?"
+  - action: utter_cstart
+  - action: utter_mginfo1
+  - action: utter_cend
+  - user: "What if at the time of accident my vehicle is being driven by someone else?"
+  - action: utter_cstart
+  - action: utter_mginfo2
+  - action: utter_cend
+  - user: "accident done by someone else with my vehicle?"
+  - action: utter_cstart
+  - action: utter_mginfo2
+  - action: utter_cend
+  - user: "What happens if I change my car or two wheeler in the middle of the year?"
+  - action: utter_cstart
+  - action: utter_mginfo3
+  - action: utter_cend
+  - user: "What steps should I take if I decide to switch my car or two-wheeler in the middle of my insurance policy"
+  - action: utter_cstart
+  - action: utter_mginfo3
+  - action: utter_cend
+  - user: "What is the procedure for changing my vehicle (car or two-wheeler) mid-year on my insurance policy?"
+  - action: utter_cstart
+  - action: utter_mginfo3
+  - action: utter_cend
+  - user: "I am selling my car. Can I transfer my policy to the new owner?"
+  - action: utter_cstart
+  - action: utter_mginfo4
+  - action: utter_cend
+  - user: "Can I transfer my car insurance policy to the new owner when I sell my vehicle?"
+  - action: utter_cstart
+  - action: utter_mginfo4
+  - action: utter_cend
+  - user: "Is it possible to pass on my car insurance policy to the new owner when I sell my car?"
+  - action: utter_cstart
+  - action: utter_mginfo4
+  - action: utter_cend

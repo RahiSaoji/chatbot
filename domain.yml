@@ -1,0 +1,184 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hi! :) Hope you are doing great"
+
+  utter_hclaims1:
+    - text: "To file a health insurance claim, first understand your policy coverage. After receiving medical services from an in-network provider, gather itemized bills and an Explanation of Benefits (EOB). Complete a claim form, attach supporting documents, and submit it to your insurer. Keep copies and follow up for approval and payment."
+
+  utter_hclaims2:
+    - text: "When making a claim, the required documents vary based on the claim type. For insurance, use claim forms, police reports, medical bills, and ownership proof. Legal claims demand petitions, evidence, and court filings. Government benefits need applications, identification, financial records, and medical documents. Warranties need purchase receipts. Property claims use ownership documents and appraisals. Employment claims require complaints, evidence, and employment-related documents."
+
+  utter_hclaims3:
+    - text: "To check your claim status, contact the relevant authority or organization handling your claim. Provide your claim reference number and personal information for an update."
+
+  utter_hclaims4:
+    - text: "Claim processing times can vary based on the type and complexity of the claim. Our goal is to process claims as quickly as possible while ensuring accuracy."
+
+  utter_hcoverage1:
+    - text: "Health insurance typically covers a range of medical expenses, including doctor's visits, hospitalization, prescription medications, preventive care, and sometimes dental and vision care. However, the exact coverage may vary depending on your specific insurance plan. It's essential to review your policy documents or contact your insurance provider for detailed information about your coverage."
+
+
+  utter_hcoverage2:
+    - text: "To find a doctor who accepts your health insurance, you can visit your insurance provider's website or use their mobile app. Most insurance companies have a search tool where you can enter your plan details and location to find a list of in-network healthcare providers. Alternatively, you can call the customer service number on your insurance card for assistance in locating a suitable doctor."
+
+  utter_hcoverage3:
+    - text: "To get reimbursed for medical expenses, you need to follow these steps:
+            1. Keep detailed records of your medical expenses, including bills and receipts.
+            2. Submit a claim to your insurance provider, either online or by filling out a claim form.
+            3. Include all necessary documentation and proof of payment.
+            4. Wait for your claim to be processed.
+            5. If approved, you'll receive reimbursement for eligible expenses."
+
+  utter_hginfo1:
+    - text: "You can select from the following options:\n  Individual health insurance,\n Family floater policy,\n Maternity Health Insurance,\n Senior citizen health insurance plan,\n Critical illness policy"
+
+  utter_hginfo2:
+    - text: "The coverage amount refers to the sum insured in your policy. It is the amount that your insurer will cover in case of a claim. Any expenses over the sum insured amount will have to be borne by you. To ensure that you do not fall short, make sure this amount is sufficient for your needs."
+
+  utter_hginfo3:
+    - text: "The factors to consider before deciding the sum insured amount are: 1. Age 
+              2. Gender
+              3. Medical and family history 
+              4. Area of residence
+              5. Number of people under one policy 
+              6. Budget"
+
+  utter_hginfo4:
+    - text: "Co-pay refers to percentage of the claim amount that is to be paid by the insured."
+
+  utter_hginfo5:
+    - text: "Deductible is the fixed amount that you will have to pay for your medical expenses. The insurer will be liable to cover your expenses only after you exceed the fixed amount."
+
+  utter_hginfo6:
+    - text: "No-claim bonus (NCB) refers to the bonus you acquire in a claim-free year. This bonus can get accumulated over the years. It allows you get a higher cover without any addition to your premium amount. Even when you port your policy to another company, you will also not lose your NCB or other renewal benefits"
+
+  utter_hginfo7:
+    - text: "Network hospitals are the ones that have a tie-up with your insurer. At these hospitals, you can avail a cashless claim benefit."
+
+  utter_tiginfo2:
+    - text: "Once the policy term gets over, the policy ends. Most often, there are no maturity benefits with term plans. You could receive a return of premiums if you opted for the facility when you purchased the policy."
+
+  utter_tiginfo1:
+    - text: "Generally, your term insurance premium will remain the same for the entire tenure."
+
+  utter_tiginfo3:
+    - text: "An overdue premium can cause a lot of concern. Your insurance company will likely offer a grace period when you can make the payment without losing your insurance coverage."
+
+  utter_tiginfo4:
+    - text: "Ideally, opt for a tenure that will keep you covered until you intend to retire. The idea is that the payout from the plan will help replace your income and support your family financially."
+
+  utter_tiginfo5:
+    - text: "Yes, but it may come at a cost. Individuals who smoke or have smoked must inform the insurance company before buying a policy. Smokers fall into a different risk pool and often have to pay higher premiums than their non-smoking counterparts."
+
+  utter_ticlaims1:
+    - text: "Contact the relevant authority or organization.
+              Obtain the necessary claim form.
+              Collect supporting documents (e.g., receipts, evidence).
+              Complete the claim form.
+              Submit both the form and supporting documents.
+              Wait for processing and communication from the authority.
+              Be ready to cooperate with any follow-up requests or inquiries."
+
+  utter_ticlaims2:
+    - text: "contact the responsible authority.
+              Obtain and complete the claim form.
+              Gather supporting documents (e.g., receipts, evidence).
+              Submit both the form and documents.
+              Await processing and communication.
+              Document requirements for a claim vary but may include proof of identity, invoices, contracts, and any relevant records"
+
+  utter_ticlaims3:
+    - text: "To obtain your claim status, please provide your claim reference number and contact the relevant authority or organization handling your claim. They will update you on the current status and any additional information needed."
+
+  utter_ticlaims4:
+    - text: "The processing time for a claim varies widely depending on the type of claim, complexity, and the organization handling it. It can range from days to several weeks or even months. For specific details, contact the relevant authority or organization responsible for your claim."
+
+  utter_ticoverage1:
+    - text: "The minimum life insurance coverage you require is ten times your annual salary"
+
+  utter_ticoverage2:
+    - text: "Yes, term plans will provide the payout benefit in case of accidental deaths. Since these policies act as pure life insurance plans, they offer a payout in case of accidental, natural and illness-related deaths."
+
+  utter_ticoverage3:
+    - text: "TTerm insurance provides coverage for a specified term, typically 10, 20, or 30 years. It offers a death benefit to beneficiaries if the insured person passes away during the policy term. Term insurance does not accumulate cash value or provide living benefits like savings or investments; it solely offers a payout upon the insured's death within the policy duration"
+
+  utter_mclaims1:
+    - text: "Contact Insurer: Inform your insurance company about the incident.
+            Provide Details: Share accident details, policy number, and driver information.
+            Submit Documentation: Submit a claim form with relevant documents (e.g., accident report, repair estimates).
+            Inspection: An insurer may inspect the vehicle.
+            Claim Processing: Await claim assessment and settlement based on the policy terms."
+
+  utter_mclaims2:
+    - text: "Contact Information: Contact the relevant authority or organization handling the claim.
+              Claim Form: Obtain and complete the claim form.
+              Supporting Documents: Gather necessary documents, such as receipts, contracts, or evidence.
+              Submission: Submit both the form and documents.
+              Communication: Await processing and updates from the authority."
+
+  utter_mclaims3:
+    - text: "To check the status of your claim, please provide your claim reference number and contact the relevant authority or organization handling your claim. They will provide you with the current status and any additional information you may need."
+
+  utter_mclaims4:
+    - text: "The processing time for a claim varies widely depending on the type of claim, complexity, and the organization handling it. It can range from days to several weeks or even months. For specific details, contact the relevant authority or organization responsible for your claim."
+
+  utter_mcoverage1:
+    - text: "The coverage amount varies depending on the specific insurance policy and its terms. It can range from a few thousand dollars to millions of dollars. To know the exact coverage amount, refer to your insurance policy documents or contact your insurance provider."
+
+  utter_mcoverage2:
+    - text: "Notify Your Insurer: Inform your insurance company promptly about the accident.
+            Claims Process: Initiate the claims process by providing accident details and necessary documentation.
+            Investigation: The insurer may investigate the incident and assess the claim.
+            Payment: If the claim is approved, you may receive a payout based on your policy coverage."
+
+  utter_mcoverage3:
+    - text: "Motor insurance typically covers damage to your vehicle and liability for injuries or damage to others in accidents. Coverage can vary but often includes collision, comprehensive, liability, and personal injury protection. Specifics depend on the policy and may include theft, vandalism, medical expenses, and more."
+
+  utter_mginfo1:
+    - text: "Your motor insurance policy cover remains in force for 12 months from the date of commencement (or as otherwise shown on your policy schedule)."
+
+  utter_mginfo3:
+    - text: "A vehicle insured under a policy can be substituted by another vehicle of the same class for the balance period of the policy subject to adjustment of premium, if any, on pro-rata basis from the date of substitution. Inform your insurance company that you are changing your car or two wheeler. Ask them how it is going to affect your premiums. Call your insurance company to update your policy according to underwriting guidelines."
+
+  utter_mginfo2:
+    - text: "Liability follows the vehicle. So, the bike / car insurance on the vehicle will apply even in the case of it being driven by some other person with your permission. Usually, the liability insurance of the person driving the vehicle will have to pay in the case the amount of the loss exhausts your policy's limits."
+
+  utter_mginfo4:
+    - text: "If you sell your car or two wheeler to another person, the car / two wheeler insurance   can be transferred in the name of the buyer"
+
+  utter_cstart:
+    - text: "Sure buddy i can help you with that"
+
+  utter_cend:
+    - text: "Thank you Feel free to contact if any queries :)"
+
+  utter_cheer_up:
+      - text: "Here is something to cheer you up:"
+        image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a rasabot built by scit students for project"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
